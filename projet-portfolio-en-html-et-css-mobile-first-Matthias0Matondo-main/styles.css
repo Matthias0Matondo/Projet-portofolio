@@ -1,0 +1,190 @@
+@media screen and (min-width: 80rem){
+body{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+    max-width: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ a {
+        float: left;
+        text-decoration: none;
+        color: black;
+        background: white;
+        height: 36px;
+        line-height: 33px;
+        padding: 0 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+
+    nav a:hover {
+        background: linear-gradient(gray, rgb(150, 150, 244));
+        border-radius: 50px;
+    }
+    .nav1{
+        margin-right: 100px;
+    }
+    .nav2{
+        margin-left: 700px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container {
+        background-color: white;
+        border-radius: 30px;
+        max-width: 100%;
+        height: 70%;
+        display: flex;
+    }
+    .photo {
+        background-color: white;
+        color: #f7f4f4;
+        width: 50%;
+        height: 100%;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        }
+    .presentation {
+        background-color: white;
+        width: 50%;
+        height: 100%;
+        border-radius: 20px;
+        }
+    p:hover{
+        background:linear-gradient(gray, rgb(189, 189, 245));
+        border-radius: 40%;
+    }
+    h2{
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+        margin-top: 200px;
+        margin-bottom: -20px;
+        font-size: 50px;
+    }
+    .present{
+        text-align: left;
+        align-items: left;
+        justify-content: left;
+        font-size: 30px;
+    }
+    p{
+        text-align: left;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        word-spacing: 3px;
+        line-height: 2.5;
+    }
+    .cv {
+        padding: 10px 20px;
+        background-color: orange;
+        border-radius: 100%;
+        cursor: pointer;
+        color: black;
+        height: 50px;
+        width: 50px;
+        }
+    .cv:hover {
+        background: linear-gradient(white, black);
+    }
+    .projet {
+        padding: 10px 20px;
+        background-color: red;
+        border-radius: 100%;
+        cursor: pointer;
+        color: black;
+        height: 50px;
+        width: 50px;
+        }
+    .projet:hover {
+        background: linear-gradient(white, black);
+        }
+    .contact:hover {
+        background: linear-gradient(white, black);
+        }
+    .contact {
+        padding: 10px 20px;
+        background-color: rgb(97, 189, 232);
+        border-radius: 100%;
+        cursor: pointer;
+        color: black;
+        height: 50px;
+        width: 50px;
+    }
+    .lien{
+        display: flex;
+        text-align: center;
+        gap: 40px;
+    }
+    .boule {
+        font-size: 40px;
+        background: linear-gradient(rgb(64, 15, 116), rgb(65, 21, 222));
+        width: 350px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 100%;
+        margin: 80px;
+        margin-top: 150px;
+        }
+        footer {
+            width: 100%;
+            display: flex;
+            gap: 130px;
+            margin-top: 20px;
+        }
+        .footer-left{
+            flex-direction: column;
+            width: 25%;
+            white-space: nowrap;
+        }
+        .footer-center-left {
+            flex-direction: column;
+            width: 25%;
+        }
+        .footer-center-right {
+            flex-direction: column;
+            width: 25%;
+            
+        }
+        .footer-right {
+            flex-direction: column;
+            width: 25%;
+            white-space: nowrap;
+            
+        }
+        .link-1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+        img{
+            border-radius: 100%;
+            max-width: 100%;
+            height: 100%;
+        }
+        .ico {
+            max-width: 15px;
+            height: 15px;
+        }
+        .horizontal-line {
+        width: 100%;
+        height: 2px;
+        background-color: rgb(208, 203, 203);
+        margin-bottom: -20px;
+        margin-top: 40px;
+        }
+        .vertical-line {
+            border-right: 2px solid rgb(75, 79, 75);
+            height: 30px;
+        }
+        #mark:hover{
+            background: linear-gradient(white, black);
+            border-radius: 100%;
+            
+        }
+}
