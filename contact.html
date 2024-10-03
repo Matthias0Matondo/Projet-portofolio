@@ -1,102 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacts</title>
-    <link rel="stylesheet" href="/src/css/desktop.css">
-    <script src="https://kit.fontawesome.com/444822b098.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Tychique Matondo - Contact</title>
 </head>
 
 <body>
-<nav>
-    <div class="nav1">
-        <a href="#"><b>Tychique Matondo</b></a>
-    </div>
-    <div class="nav2">
-        <a href="#" class="item">CV</a>
-        <div class="bar"></div>
-        <a href="#" class="item">Projets</a>
-        <div class="bar"></div>
-        <a href="#" class="item">Contact</a>
-    </div>
-</nav>
-    <main id="main_contacts">
-        <div id="main_left">
-            <h3>Contact</h3>
+    <header>
+        <nav class="text-center flex flex-column gap-m flex-wrap padding-y-s sm-flex-row sm-flex-justify-space-between">
             <div>
-                <p><b>Téléphone</b></p>
-                <p class="p-adrss">
-                    <a id="a-adrss" href="tel:+243-840-666-681">+243-840-666-681</a>
+                <h1>
+                    <a href="index.html">Tychique M. Matondo</a>
+                </h1>
+            </div>
+            <button id="hamburger" class="hamburger sm-hidden">
+                ☰
+            </button>
+    
+            <div id="menu" class="menu">
+                <ul class="list-style-none flex pl-0 flex-align-center flex-justify-center">
+                    <li class="menu-item">
+                        <a href="cv.html">CV</a>
+                    </li>
+                    <li class="menu-item"><a href="projets.html">Projets</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="max-width-1100 margin-auto padding-y-xxl lg-flex flex-wrap flex-justify-space-between">
+        <div class="text-center padding-y-xs flex-1 md-text-left">
+            <h2 class="">Contact</h2>
+            <section class="padding-y-m">
+                <h3>Téléphone</h3>
+                <p>
+                    <a href="tel:0840666681">+243 840 666 681</a>
                 </p>
-            </div>
-            <div>
-                <p><b>Email</b></p>
-                <p class="p-adrss">kusamatthias@gmail.com</p>
-            </div>
+                <p>
+                    <a href="tel:0824387722">+243 824 387 722</a>
+                </p>
+            </section>
+            <section>
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:kusamatthias@gmail.com">kusamatthias@gmail.com</a>
+                </p>
+            </section>
         </div>
-        <form id="main_right">
-            <div>
-                <div class="div_field">
-                    <label for="firstName">Votre Prénom</label>
-                    <input type="text" name="firstName" class="field" id="firstName" />
+        <div class="flex-1">
+            <form id="contact-form">
+                <div class="sm-flex flex-wrap flex-justify-space-between gap-l">
+                    <div class="flex-1">
+                        <div class="padding-y-xs">
+                            <label for="nom" class="width-full">Votre nom</label>
+                        </div>
+                        <div>
+                            <input class="width-full height-40" type="text" name="nom" id="nom" />
+                        </div>
+                        <div>
+                            <p id="nomError" class="text-red"></p>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="padding-y-xs">
+                            <label for="prénom" class="width-full">Votre prénom</label>
+                        </div>
+                        <div>
+                            <input class="width-full height-40" type="text" name="prénom" id="prénom" />
+                        </div>
+                        <div>
+                            <p id="prénomError" class="text-red"></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="div_field">
-                    <label for="email">Votre Email</label>
-                    <input type="email" name="email" class="field" id="email" />
+                <div class="padding-y-s sm-flex flex-wrap flex-justify-space-between gap-l">
+                    <div class="flex-1">
+                        <div class="padding-y-xs">
+                            <label class="width-full" for="email">Votre Email</label>
+                        </div>
+                        <div>
+                            <input class="width-full height-40" type="email" name="email" id="email" />
+                        </div>
+                        <div>
+                            <p id="emailError" class="text-red"></p>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="padding-y-xs">
+                            <label class="width-full" for="objet">L'objet de votre message</label>
+                        </div>
+                        <div>
+                            <input class="width-full height-40" type="text" name="objet" id="objet" />
+                        </div>
+                        <div>
+                            <p id="objetError" class="text-red"></p>
+                        </div>
+                    </div>
                 </div>
-                <div class="div_field">
-                    <label for="message">Votre message</label>
-                    <textarea name="message" id="message" class="field" rows="5"></textarea>
+                <div class="flex flex-wrap flex-justify-space-between gap-l">
+                    <div class="flex-1">
+                        <div class="padding-y-xs">
+                            <label class="width-full" for="message">Votre message</label>
+                        </div>
+                        <div class="sm-flex flex-wrap flex-justify-space-between gap-l">
+                            <div class="flex-1">
+                                <textarea class="width-full height-150 resize-none" name="message"
+                                    id="message"></textarea>
+                                <div>
+                                    <p id="messageError" class="text-red"></p>
+                                </div>
+                            </div>
+
+                            <div class="flex-1 text-center sm-text-left">
+                                <button class="height-150 width-150 rounded bg-yellow bordered text-bold" type="submit">
+                                    Envoyer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="div_field">
-                    <label for="lastName">Votre nom</label>
-                    <input type="text" name="lastName" class="field" id="lastName" />
-                </div>
-                <div class="div_field">
-                    <label for="objet">L'objet de votre message</label>
-                    <input type="text" name="objet" class="field" id="objet" />
-                </div>
-                <div id="card_btn">
-                    <button id="btn_send" class="btn-crcl">Envoyer</button>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </main>
-    <div class="horizontal-line"></div>
-
-
-    <footer>
-        <div class="footer-left">
-            <h3><b>Télephone</b></h3>
-            <p class="footer-links">
-                <a href="tel:0840666681" class="link-1" id="mark">+243 840 666 681</a>
-                <a href="tel:0824387722" class="link-1" id="mark">+243 824 387 722</a>
+    <footer
+        class="flex flex-justify-space-between top-bordered padding-y-s text-center flex-column gap-m md-flex md-flex-row md-text-left md-gap-0">
+        <div>
+            <h3>Téléphone</h3>
+            <p>
+                <a href="tel:0840666681">+243 840 666 681</a>
+            </p>
+            <p>
+                <a href="tel:0824387722">+243 824 387 722</a>
+            </p>
         </div>
-        <div class="footer-center-left">
-            <h3><b>Email</b></h3>
-            <p class="footer-links">
-                <a href="https://www.gmail.com" target="_blank" class="link-1" id="mark">kusamatthias@gmail.com</a>
+        <div>
+            <h3>Email</h3>
+            <p>
+                <a href="mailto:kusamatthias@gmail.com">kusamatthias@gmail.com</a>
+            </p>
         </div>
-        <div class="footer-center-right">
-            <h3><b>Suivez-moi</b></h3>
-            <div class="footer-icons">
-                <a href="https://www.instagram.com/tychique_matondo/" target="_blank"><img src="/assets/img/instagram.jpg"
-                        alt="" class="ico"></a>
-                <a href="https://x.com/Mat_MatondKus" target="_blank"><img src="/assets/img/x.png" alt="" class="ico"></a>
-                <a href="https://www.linkedin.com/in/tychique-matondo-0b0379328/" target="_blank"><img
-                        src="/assets/img/in.png" alt="" class="ico"></a>
-            </div>
+        <div>
+            <h3>Suivez-moi</h3>
+            <p>
+                <a href="https://www.instagram.com/big_diss_blckb/">
+                    <iconify-icon icon="mdi:instagram"></iconify-icon>
+                </a>
+                <a href="https://www.linkedin.com/in/fran%C3%A7ois-disubi-200653199/">
+                    <iconify-icon icon="akar-icons:linkedin-fill"></iconify-icon>
+                </a>
+                <a href="https://github.com/fdis111">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                </a>
+                <a href="https://x.com/Mat_MatondKus"></a>
+                <iconify-icon icon="mdi:twitter"></iconify-icon>
+                </a>
+            </p>
         </div>
-        <div class="footer-right">
-            <p class="footer-links">
-                <a href="https://web.facebook.com/tichique.kusa" target="_blank" class="link-1" id="mark">© 2024 By Tychique
-                    M. Matondo</a>
+        <div>
+            <p class="text-small">© 2024 By Tychique M. Matondo</p>
         </div>
     </footer>
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Your public id here",
+            });
+        })();
+    </script>
+
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
